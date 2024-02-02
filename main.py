@@ -1,5 +1,7 @@
 # juego piedra, papel o tijeras BASICO
-user_option = input('Piedra, papel o tijeras => ')
+user_option = input('Piedra, papel o tijeras => ').lower()
+# user_option = user_option.lower()
+# print(user_option)
 computer_option = 'tijera'
 
 if user_option == computer_option:
