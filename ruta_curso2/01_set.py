@@ -18,6 +18,8 @@ set_from_tuple = set(('abc', 'cvb', 'ase', 'abc'))
 numbers = [1, 2, 3, 1, 2, 3, 4]
 set_numbers = set(numbers)
 print(set_numbers)
+
+# transformamos nuestro conjunto en una lista
 unique_numbers = list(set_numbers)
 print(unique_numbers)
 print(type(unique_numbers))
