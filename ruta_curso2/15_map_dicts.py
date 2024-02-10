@@ -18,8 +18,14 @@ print(prices)
 
 # se modifica la lista para agregar el nuevo campo de 'taxes'
 def add_taxes(item):
-    item['taxes'] = item['price'] * .19
-    return item
+    # para no modificar la lista original, se hace una copia de los datos de la lista original a 
+    # new_item y ahora se trabaja sobre ella
+    new_item = item.copy()
+    new_item['taxes'] = new_item['price'] * .19
+    return new_item
 
 new_items = list(map(add_taxes, items))
+print('new list')
 print(new_items)
+print('old list')
+print(items)
